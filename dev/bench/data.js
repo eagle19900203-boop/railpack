@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1773690667842,
+  "lastUpdate": 1773707110166,
   "repoUrl": "https://github.com/railwayapp/railpack",
   "entries": {
     "Benchmark": [
@@ -16968,6 +16968,563 @@ window.BENCHMARK_DATA = {
           {
             "name": "ruby-with-node",
             "value": 456949965,
+            "unit": "bytes"
+          },
+          {
+            "name": "rust-cargo-workspaces-glob",
+            "value": 84638702,
+            "unit": "bytes"
+          },
+          {
+            "name": "rust-cargo-workspaces",
+            "value": 84655484,
+            "unit": "bytes"
+          },
+          {
+            "name": "rust-custom-toolchain",
+            "value": 87793002,
+            "unit": "bytes"
+          },
+          {
+            "name": "rust-custom-version",
+            "value": 87866319,
+            "unit": "bytes"
+          },
+          {
+            "name": "rust-multiple-bins",
+            "value": 85501855,
+            "unit": "bytes"
+          },
+          {
+            "name": "rust-rocket",
+            "value": 89292276,
+            "unit": "bytes"
+          },
+          {
+            "name": "rust-system-deps",
+            "value": 84656007,
+            "unit": "bytes"
+          },
+          {
+            "name": "secrets",
+            "value": 84213135,
+            "unit": "bytes"
+          },
+          {
+            "name": "shell-bash-arrays",
+            "value": 84211914,
+            "unit": "bytes"
+          },
+          {
+            "name": "shell-platform-arch",
+            "value": 102100339,
+            "unit": "bytes"
+          },
+          {
+            "name": "shell-script",
+            "value": 84211534,
+            "unit": "bytes"
+          },
+          {
+            "name": "staticfile-config",
+            "value": 131730754,
+            "unit": "bytes"
+          },
+          {
+            "name": "staticfile-index",
+            "value": 131730689,
+            "unit": "bytes"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Michael Bianco",
+            "username": "iloveitaly",
+            "email": "mike@mikebian.co"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "af14efed4c5253a36eca6925f0531ef7de194d8f",
+          "message": "fix: use updated mise ENV var (#517)\n\nAI looked through the release notes over the last couple months",
+          "timestamp": "2026-03-16T19:43:47Z",
+          "url": "https://github.com/railwayapp/railpack/commit/af14efed4c5253a36eca6925f0531ef7de194d8f"
+        },
+        "date": 1773707109131,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "bun-pnpm",
+            "value": 543088901,
+            "unit": "bytes"
+          },
+          {
+            "name": "config-file",
+            "value": 818791560,
+            "unit": "bytes"
+          },
+          {
+            "name": "cpp-cmake",
+            "value": 84406181,
+            "unit": "bytes"
+          },
+          {
+            "name": "cpp-meson",
+            "value": 84404222,
+            "unit": "bytes"
+          },
+          {
+            "name": "deno-2",
+            "value": 294212075,
+            "unit": "bytes"
+          },
+          {
+            "name": "dockerignore",
+            "value": 84212496,
+            "unit": "bytes"
+          },
+          {
+            "name": "dotnet-api",
+            "value": 830482967,
+            "unit": "bytes"
+          },
+          {
+            "name": "dotnet-cli",
+            "value": 756824505,
+            "unit": "bytes"
+          },
+          {
+            "name": "elixir-ecto",
+            "value": 132948061,
+            "unit": "bytes"
+          },
+          {
+            "name": "elixir-latest",
+            "value": 150511502,
+            "unit": "bytes"
+          },
+          {
+            "name": "elixir-phoenix",
+            "value": 151302202,
+            "unit": "bytes"
+          },
+          {
+            "name": "gleam-custom-version",
+            "value": 366428456,
+            "unit": "bytes"
+          },
+          {
+            "name": "gleam-include-source",
+            "value": 344738814,
+            "unit": "bytes"
+          },
+          {
+            "name": "gleam",
+            "value": 342611695,
+            "unit": "bytes"
+          },
+          {
+            "name": "go-cmd-dirs",
+            "value": 92073524,
+            "unit": "bytes"
+          },
+          {
+            "name": "go-mod",
+            "value": 86344689,
+            "unit": "bytes"
+          },
+          {
+            "name": "go-workspaces",
+            "value": 85724662,
+            "unit": "bytes"
+          },
+          {
+            "name": "java-gradle",
+            "value": 531085530,
+            "unit": "bytes"
+          },
+          {
+            "name": "java-maven",
+            "value": 524364968,
+            "unit": "bytes"
+          },
+          {
+            "name": "java-zulu-version",
+            "value": 384071378,
+            "unit": "bytes"
+          },
+          {
+            "name": "mise-config",
+            "value": 800276219,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-angular",
+            "value": 132218181,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-astro-server",
+            "value": 552415902,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-astro",
+            "value": 131970478,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-bun-bunfig",
+            "value": 473361795,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-bun-no-deps",
+            "value": 473181840,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-bun-workspaces",
+            "value": 473187884,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-bun",
+            "value": 499787684,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-corepack",
+            "value": 376661852,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-cra",
+            "value": 133066143,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-latest-npm-native-deps",
+            "value": 530014136,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-latest-pnpm-mise-native-deps",
+            "value": 570617220,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-next",
+            "value": 923627865,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-npm-install-in-build",
+            "value": 359733043,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-npm-workspaces",
+            "value": 383294603,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-npm",
+            "value": 360404465,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-nuxt",
+            "value": 598287984,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-oldest",
+            "value": 332130685,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-pnpm-engines",
+            "value": 419756055,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-pnpm-workspaces",
+            "value": 415773184,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-prisma",
+            "value": 682214166,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-puppeteer",
+            "value": 1455144698,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-remix",
+            "value": 529628305,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-svelte-kit",
+            "value": 521384578,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-tanstack-start",
+            "value": 663668001,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-turborepo",
+            "value": 967755522,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-vite-react-router-spa",
+            "value": 132304340,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-vite-react-router-ssr",
+            "value": 550186361,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-vite-react",
+            "value": 132155250,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-vite-svelte",
+            "value": 131978244,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-vite-vanilla",
+            "value": 131965459,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-yarn-1",
+            "value": 402447170,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-yarn-2-node-linker",
+            "value": 375387049,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-yarn-2",
+            "value": 331886330,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-yarn-3",
+            "value": 393472800,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-yarn-4",
+            "value": 422922699,
+            "unit": "bytes"
+          },
+          {
+            "name": "node-yarn-workspaces",
+            "value": 373695199,
+            "unit": "bytes"
+          },
+          {
+            "name": "php-laravel-11-react",
+            "value": 762117465,
+            "unit": "bytes"
+          },
+          {
+            "name": "php-laravel-12-react",
+            "value": 917707767,
+            "unit": "bytes"
+          },
+          {
+            "name": "php-vanilla-82",
+            "value": 649782346,
+            "unit": "bytes"
+          },
+          {
+            "name": "php-vanilla",
+            "value": 661277760,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-bot-only",
+            "value": 268365371,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-compiled",
+            "value": 464192162,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-django",
+            "value": 353565665,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-fastapi",
+            "value": 363393953,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-fasthtml",
+            "value": 325619500,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-flask",
+            "value": 284317580,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-latest-psycopg",
+            "value": 333351032,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-latest",
+            "value": 522149114,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-oldest",
+            "value": 249800574,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-pdm",
+            "value": 374687411,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-pip",
+            "value": 403393528,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-pipfile",
+            "value": 294403565,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-poetry",
+            "value": 377269484,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-psycopg-binary",
+            "value": 318641593,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-system-deps",
+            "value": 941275231,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-uv-packaged",
+            "value": 325033976,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-uv-tool-versions",
+            "value": 297307921,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-uv-workspace-postgres",
+            "value": 330083549,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-uv-workspace",
+            "value": 325034402,
+            "unit": "bytes"
+          },
+          {
+            "name": "python-uv",
+            "value": 318247650,
+            "unit": "bytes"
+          },
+          {
+            "name": "railpack-env-configuration",
+            "value": 216778412,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-2",
+            "value": 232868401,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-3",
+            "value": 243589165,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-execjs",
+            "value": 437884868,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-jemalloc",
+            "value": 261608178,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-latest",
+            "value": 267312303,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-local-deps",
+            "value": 240585046,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-no-version",
+            "value": 266936960,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-rails-api-app",
+            "value": 331381160,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-rails-postgres",
+            "value": 1085540449,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-sinatra",
+            "value": 251844899,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-vanilla",
+            "value": 247056480,
+            "unit": "bytes"
+          },
+          {
+            "name": "ruby-with-node",
+            "value": 456950189,
             "unit": "bytes"
           },
           {
