@@ -123,3 +123,70 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           vercel-args: '--prod'
+{
+  "$schema": "[https://railway.app/railway.schema.json](https://railway.app/railway.schema.json)",
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "node server.js",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
+const express = require('express');
+const crypto = require('crypto');
+const cors = require('cors');
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+const CONFIG = {
+    MerchantID: process.env.NEWEBPAY_MERCHANT_ID,
+    HashKey: process.env.NEWEBPAY_HASH_KEY,
+    HashIV: process.env.NEWEBPAY_HASH_IV,
+    PayURL: '[https://core.newebpay.com/MPG/mpg_gateway](https://core.newebpay.com/MPG/mpg_gateway)', // 正式機
+    Version: '2.0'
+};
+
+app.post('/api/pay/init', (req, res) => {
+    const { orderId, amount } = req.body;
+    const tradeData = {
+        MerchantID: CONFIG.MerchantID,
+        RespondType: 'JSON',
+        TimeStamp: Math.floor(Date.now() / 1000),
+        Version: CONFIG.Version,
+        MerchantOrderNo: orderId,
+        Amt: amount,
+        ItemDesc: 'GUBON 指令解鎖',
+        LoginType: 0
+    };
+
+    const chain = Object.entries(tradeData).map(([k,v]) => `${k}=${v}`).join('&');
+    const cipher = crypto.createCipheriv('aes-256-cbc', CONFIG.HashKey, CONFIG.HashIV);
+    let encrypted = cipher.update(chain, 'utf8', 'hex') + cipher.final('hex');
+    const sha = crypto.createHash('sha256')
+        .update(`HashKey=${CONFIG.HashKey}&${encrypted}&HashIV=${CONFIG.HashIV}`)
+        .digest('hex').toUpperCase();
+
+    res.json({ PayURL: CONFIG.PayURL, MerchantID: CONFIG.MerchantID, TradeInfo: encrypted, TradeSha: sha });
+});
+
+app.get('/health', (req, res) => res.send('IGNITED'));
+app.listen(process.env.PORT || 8080);
+name: GUBON_DEPLOY
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Trigger Render
+        run: curl -X GET "${{ secrets.RENDER_DEPLOY_HOOK }}"
+      - name: Vercel Deploy
+        uses: amondnet/vercel-action@v20
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-args: '--prod'
