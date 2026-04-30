@@ -190,3 +190,4 @@ jobs:
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-args: '--prod'
+https://github.com/supabase/supabase/blob/master/apps%2Fdocs%2Fcontent%2Fguides%2Fdeployment%2Fshared-responsibility-model.mdx
